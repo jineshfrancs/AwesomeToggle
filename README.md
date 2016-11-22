@@ -1,4 +1,5 @@
 # AwesomeToggle
 A customized toggle button
 
-![Output sample](https://github.com/ajasmin/camstudio-mousedown-highlight/raw/master/android_vid_test.gif)
+ScreenShot:
+![Output sample](https://github.com/jineshfrancs/AwesomeToggle/blob/master/screens/screen.gif)
