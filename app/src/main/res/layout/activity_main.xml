@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <test.jinesh.awesometoggleproject.AwesomeToggle
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sample"
+        app:inactive_background_color="@color/colorPrimary"
+        app:active_background_color="@color/colorAccent"
+        app:font_color="@color/white"
+        app:inner_toggle_color="@color/white"
+        />
+</LinearLayout>
