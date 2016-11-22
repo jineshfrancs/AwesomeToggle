@@ -5,7 +5,7 @@ ScreenShot:
 ![Output sample](https://github.com/jineshfrancs/AwesomeToggle/blob/master/screens/screen.gif)
 
 In your xml file add this tag to get AwesomeToggle
- <p>
+ ```
  <test.jinesh.awesometoggleproject.AwesomeToggle
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -15,9 +15,9 @@ In your xml file add this tag to get AwesomeToggle
         app:font_color="@color/white"
         app:inner_toggle_color="@color/white"
         />
-  </p>      
+```      
 You can apply checked change listner in java code to monitor the toggle state changes
-  
+```  
   awesomeToggle= (AwesomeToggle) findViewById(R.id.sample);
   awesomeToggle.setOnCheckedChangeListner(new AwesomeToggle.OnCheckedChangeListner() {
             @Override
@@ -25,6 +25,6 @@ You can apply checked change listner in java code to monitor the toggle state ch
                 
             }
   });
-        
-        
+```        
+     
         
