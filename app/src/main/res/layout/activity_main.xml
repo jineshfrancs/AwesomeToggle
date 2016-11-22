@@ -16,4 +16,5 @@
         app:font_color="@color/white"
         app:inner_toggle_color="@color/white"
         />
+
 </LinearLayout>
