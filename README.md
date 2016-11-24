@@ -2,7 +2,7 @@
 A customized toggle button
 
 ScreenShot:
-![Output sample](https://github.com/jineshfrancs/AwesomeToggle/blob/master/screens/screen.gif)
+![Output sample](https://github.com/jineshfrancs/AwesomeToggle/blob/master/screens/screen_new.gif)
 
 In your xml file add this tag to get AwesomeToggle
  ```
