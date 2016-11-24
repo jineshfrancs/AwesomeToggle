@@ -74,6 +74,8 @@ public class AwesomeToggle extends View {
         innerCirclePaint.setStyle(Paint.Style.FILL);
         backgroundColor = inActiveBackgroundColor;
         outerCirclePaint.setStyle(Paint.Style.FILL);
+        this.setLayerType(LAYER_TYPE_SOFTWARE, outerCirclePaint);
+        outerCirclePaint.setShadowLayer(2.0f, 1.0f, 4.0f, Color.GRAY);
         animator = ValueAnimator.ofFloat(x, y);
         viewRectangle = new RectF(0, 0, 0, 0);
     }
@@ -87,19 +89,19 @@ public class AwesomeToggle extends View {
         int heightSize = View.resolveSize(getMeasuredHeight(), heightMeasureSpec);
         width = getMeasuredWidth();
         height = getMeasuredHeight();
-        setMeasuredDimension(widthSize, widthSize / 2);
+        setMeasuredDimension(widthSize+25, (widthSize / 2)+25);
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        x = (this.left + (getMeasuredWidth() / 2) / 2) + animChange;
-        y = (this.top + (getMeasuredWidth() / 2) / 2) + 2;
-        textX = x + ((getMeasuredWidth() / 2) / 2);
+        x = (this.left + (width / 2) / 2) + animChange;
+        y = (this.top + (width / 2) / 2) + 2;
+        textX = x + ((width / 2) / 2);
         textXOff = textX;
-        textXOn = x - ((getMeasuredWidth() / 2) / 2) / 2 - 10;
-        textY = top + ((getMeasuredWidth() / 2) / 2) + ((((getMeasuredWidth() / 2) / 2) / 2)) - 2;
-        viewRectangle.set(this.left, this.top, getMeasuredWidth(), (getMeasuredWidth() / 2));
-        super.onLayout(changed, left, top, right, bottom);
+        textXOn = x - ((width / 2) / 2) / 2 - 10;
+        textY = top + ((width / 2) / 2) + ((((width / 2) / 2) / 2)) - 2;
+        viewRectangle.set(this.left, this.top, width, (width / 2));
+        super.onLayout(changed, left, top, right+25, bottom+25);
     }
 
     @Override
