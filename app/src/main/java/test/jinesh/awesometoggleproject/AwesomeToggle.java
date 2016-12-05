@@ -83,17 +83,50 @@ public class AwesomeToggle extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        left = getLeft() + getPaddingLeft();
-        top = getTop() + getPaddingTop();
-        int widthSize = View.resolveSize(getMeasuredWidth(), widthMeasureSpec);
-        int heightSize = View.resolveSize(getMeasuredHeight(), heightMeasureSpec);
-        width = getMeasuredWidth();
-        height = getMeasuredHeight();
-        setMeasuredDimension(widthSize+25, (widthSize / 2)+25);
+        int desiredWidth = 100;
+        int desiredHeight = 50;
+
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+
+        int width;
+        int height;
+
+        //Measure Width
+        if (widthMode == MeasureSpec.EXACTLY) {
+            //Must be this size
+            width = widthSize;
+        } else if (widthMode == MeasureSpec.AT_MOST) {
+            //Can't be bigger than...
+            width = Math.min(desiredWidth, widthSize);
+        } else {
+            //Be whatever you want
+            width = desiredWidth;
+        }
+
+        //Measure Height
+        if (heightMode == MeasureSpec.EXACTLY) {
+            //Must be this size
+            height = heightSize;
+        } else if (heightMode == MeasureSpec.AT_MOST) {
+            //Can't be bigger than...
+            height = Math.min(desiredHeight, heightSize);
+        } else {
+            //Be whatever you want
+            height = desiredHeight;
+        }
+
+        //MUST CALL THIS
+        setMeasuredDimension(width+25, height+25);
     }
 
     @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        width=w;
+        height=h;
         x = (this.left + (width / 2) / 2) + animChange;
         y = (this.top + (width / 2) / 2) + 2;
         textX = x + ((width / 2) / 2);
@@ -101,7 +134,6 @@ public class AwesomeToggle extends View {
         textXOn = x - ((width / 2) / 2) / 2 - 10;
         textY = top + ((width / 2) / 2) + ((((width / 2) / 2) / 2)) - 2;
         viewRectangle.set(this.left, this.top, width, (width / 2));
-        super.onLayout(changed, left, top, right+25, bottom+25);
     }
 
     @Override

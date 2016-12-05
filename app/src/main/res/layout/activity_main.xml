@@ -8,10 +8,10 @@
     >
 
     <test.jinesh.awesometoggleproject.AwesomeToggle
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:id="@+id/sample"
-app:active_background_color="@color/colorPrimary"
+        app:active_background_color="@color/colorPrimary"
         />
 
 </LinearLayout>
