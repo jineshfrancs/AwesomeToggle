@@ -1,7 +1,10 @@
 # AwesomeToggle
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Awesome%20Toggle-blue.svg?style=flat)](https://android-arsenal.com/details/3/4699)
+
 A customized toggle button
 
 ScreenShot:
+
 ![Output sample](https://github.com/jineshfrancs/AwesomeToggle/blob/master/screens/screen_new.gif)
 
 In your xml file add this tag to get AwesomeToggle
