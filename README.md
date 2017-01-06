@@ -1,5 +1,5 @@
 # AwesomeToggle
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Awesome%20Toggle-blue.svg?style=flat)](https://android-arsenal.com/details/3/4699)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Awesome%20Toggle-blue.svg?style=flat)](https://android-arsenal.com/details/3/4699) [![GitHub issues](https://img.shields.io/github/issues/jineshfrancs/AwesomeToggle.svg)](https://github.com/jineshfrancs/AwesomeToggle/issues) [![GitHub forks](https://img.shields.io/github/forks/jineshfrancs/AwesomeToggle.svg)](https://github.com/jineshfrancs/AwesomeToggle/network) [![GitHub stars](https://img.shields.io/github/stars/jineshfrancs/AwesomeToggle.svg)](https://github.com/jineshfrancs/AwesomeToggle/stargazers)
 
 A customized toggle button
 
