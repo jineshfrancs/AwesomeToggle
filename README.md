@@ -8,7 +8,7 @@ ScreenShot:
 ![Output sample](https://github.com/jineshfrancs/AwesomeToggle/blob/master/screens/screen_new.gif)
 
 In your xml file add this tag to get AwesomeToggle
- ```
+ ```xml
  <test.jinesh.awesometoggleproject.AwesomeToggle
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@ In your xml file add this tag to get AwesomeToggle
         />
 ```      
 You can apply checked change listner in java code to monitor the toggle state changes
-```  
+```java  
   awesomeToggle= (AwesomeToggle) findViewById(R.id.sample);
   awesomeToggle.setOnCheckedChangeListner(new AwesomeToggle.OnCheckedChangeListner() {
             @Override
